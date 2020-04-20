@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    background: linear-gradient(140deg,#778899,white,#778899);
+       }
+#viewer {
+    height: 400px;
+    width: 850px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: snow;  
+    position: relative;  
+     }
+#arrowL {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 190px;
+}
+.img {
+    height: 400px;
+    width: 720px;
+    position: absolute;
+    bottom: 0px;
+    left: 32.5px;
+     }
+.text {
+    height: 90px;
+    width: 720px;
+    background: black;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 0px; 
+    left: 65px;  
+}
+h3 {
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 0px;
+}
+p {
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 11px;
+    line-height: 1;
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 0;
+}
+#arrowR {
+    transform: rotate(0.5turn);
+}
