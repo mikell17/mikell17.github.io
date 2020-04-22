@@ -34,12 +34,14 @@ body {
 }
 .arrow.right img {
     transform: rotate(0.5turn);
+    }
+#contain-photo {
+    position: relative;
+    height: 400px;
 }
-
 #photo {
     height: 400px;
     width: 770px;
-    position: relative;
     }
 #photo img {
     width: 100%;
