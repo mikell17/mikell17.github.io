@@ -97,14 +97,11 @@ $('#arrow-left').click(() => {
 
 imagesData.forEach((photo, index) => {
   $('#TNcontainer').append(`<div class="thumbnail" imagesData-index="${index}"><img src="${photo.photo}"></div>`);
-//$('.thumbnail').append(photo);
 });
 
  
- // $('.thumbnail').click((event) => {
-   // let indexClicked = $(event.target).attr('imagesData-index');
-   // let numberIndex = parseInt(indexClicked);
-   // $('#clicked').text(imagesData[indexClicked]);
-  //});
-
-
+$('.thumbnail').click((event) => {
+  currentPhoto = $(event.target).attr('data-number');
+	loadPhoto(currentPhoto);
+});
+  
