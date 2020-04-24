@@ -75,11 +75,15 @@ body {
     padding: 0;
 }
 
-.thumbnails {
+.thumbnail {
     border: 1px solid #ddd; 
     border-radius: 4px;
     padding: 5px; 
     width: 80px; 
+}
+.thumbnail img {
+    height: 100%;
+    width: 100%;
 }
 #TNcontainer {
     margin-top: 2px;

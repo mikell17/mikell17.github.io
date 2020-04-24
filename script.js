@@ -96,8 +96,10 @@ $('#arrow-left').click(() => {
 });
 
 imagesData.forEach((photo, index) => {
-  $('#TNcontainer').append(`<div class="thumbnail" imagesData-index="${index}">${photo} (imagesData-index="${index}")</div>`);
-  //$('.thumbnail').append(photo);
+  $('#TNcontainer').append(`<div class="thumbnail" imagesData-index="${index}"><img src="${photo.photo}"></div>`);
+//$('.thumbnail').append(photo);
+});
+
  
  // $('.thumbnail').click((event) => {
    // let indexClicked = $(event.target).attr('imagesData-index');
@@ -105,4 +107,4 @@ imagesData.forEach((photo, index) => {
    // $('#clicked').text(imagesData[indexClicked]);
   //});
 
-});
+
