@@ -29,6 +29,7 @@ body {
     width: 20px;
     display: inline-flex;
 }
+
 .arrow img {
     vertical-align: middle
 }
@@ -41,12 +42,15 @@ body {
     position: relative;
     height: 400px;
 }
+
 #photo {
     height: 400px;
      }
+
 #photo img {
     width: 100%;
     }
+
 .text {
     height: 90px;
     width: 100%;
@@ -56,6 +60,7 @@ body {
     left: 0px;  
     position: absolute;
 }
+
 #photo-title {
     color: white;
     font-family: 'Baloo Bhaina 2', cursive;
@@ -65,6 +70,7 @@ body {
     margin-left: 5px;
     padding: 0px;
 }
+
 #photo-description {
     color: white;
     font-family: 'Baloo Bhaina 2', cursive;
@@ -79,14 +85,49 @@ body {
     border: 1px solid #ddd; 
     border-radius: 4px;
     padding: 5px; 
-    width: 80px; 
+    width: 80px;
 }
+
 .thumbnail img {
     height: 100%;
     width: 100%;
 }
+
+.thumbnail:hover{
+    width: 150px;
+    margin: 0px;
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+
 #TNcontainer {
     margin-top: 2px;
     display: flex;
     justify-content: center;
+}
+
+.highlight {
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 5px;
+    width: 60px;
+    height: 40px;
+}
+
+.hidden-title {
+	visibility: hidden;
+	position: absolute;
+	top: -45px;
+	left: -45px;
+	font-size: 12px;
+	color: white;
+	background-color: slategrey;
+	width: 200px;
+	text-align: center;
+	border-radius: 3px;
+    padding: 3px;
 }

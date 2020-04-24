@@ -69,7 +69,9 @@ const photo       = $("#photo"),
 let loadPhoto = (photoNumber) => {
   photo.attr('src', imagesData[photoNumber].photo);
   title.text(imagesData[photoNumber].title);
-  description.text(imagesData[photoNumber].description)
+  description.text(imagesData[photoNumber].description);
+  $('#TNcontainer div').remove('.highlight');
+	$(`*[data-number="${photoNumber}"]`).parent().prepend(`<div class="highlight"></div>`);
 }
 
 loadPhoto(currentPhoto);
@@ -95,13 +97,21 @@ $('#arrow-left').click(() => {
   }
 });
 
-imagesData.forEach((photo, index) => {
-  $('#TNcontainer').append(`<div class="thumbnail" imagesData-index="${index}"><img src="${photo.photo}"></div>`);
+let i = 0;
+imagesData.forEach((data) => {
+	$('#TNcontainer').append(`<div style="position: relative"><div class="hidden-title">${data.title}</div><img src="${data.photo}" class="thumbnail" data-number="${i}"></img></div>`);
+	i++;
 });
 
  
 $('.thumbnail').click((event) => {
   currentPhoto = $(event.target).attr('data-number');
 	loadPhoto(currentPhoto);
+});
+
+$('.thumbnail').hover((event) => {
+	$(event.target).parent().children('.hidden-title').css('visibility', 'unset');
+}, (event) => {
+	$(event.target).parent().children('.hidden-title').css('visibility', 'hidden');
 });
   
